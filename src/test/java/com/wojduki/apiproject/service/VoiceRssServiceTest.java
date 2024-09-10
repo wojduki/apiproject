@@ -7,12 +7,12 @@ import java.io.IOException;
 class VoiceRssServiceTest {
 
     @Test
-    void speakJoke() throws IOException {
+    void speakWeather() throws IOException {
         //given
         AudioPlayService audioPlayService= new AudioPlayService();
         VoiceRssService voiceRssService = new VoiceRssService(audioPlayService);
         //when
-        boolean spoken = voiceRssService.speakWeather("Hello Chuck Norris!");
+        boolean spoken = voiceRssService.speakWeather("Hello Weather!");
         //then
         Assertions.assertTrue(spoken, "Spoken is NOT TRUE");
     }
