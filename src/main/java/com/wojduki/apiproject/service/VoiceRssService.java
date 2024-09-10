@@ -26,7 +26,7 @@ public class VoiceRssService {
         this.audioPlayService = audioPlayService;
     }
 
-    public boolean speakJoke(String textToVoice) throws IOException {
+    public boolean speakWeather(String textToVoice) throws IOException {
         LOGGER.info("speak weather"+textToVoice);
 
         HttpUrl httpUrl = new HttpUrl.Builder()
