@@ -22,7 +22,7 @@ public class WeatherController {
         this.voiceRssService = voiceRssService;
     }
     @GetMapping
-    public String randomJoke(Model model) throws IOException {
+    public String weatherForecast(Model model) throws IOException {
         LOGGER.info("weather forecast");
         String value = weatherService.weatherForecast().toString();
         model.addAttribute("weatherForecast", value);
