@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <title>Weather forecast</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.3.3/css/bootstrap.min.css}"/>
+
+    <script th:src="@{/webjars/jquery/3.7.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/5.3.3/js/bootstrap.min.js}"></script>
+</head>
+<body>
+<div class="container">
+    <h1>Weather API response:</h1>
+    <form class="form-horizontal">
+        <h3 th:text="${weatherForecast}"></h3>
+        <div>
+            <button type="submit" class="btn btn-primary">New response</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>
