@@ -7,14 +7,14 @@ import java.io.IOException;
 import java.util.logging.Logger;
 
 @Service
-public class SpeakWeatherForecast {
-    private static final Logger LOGGER = Logger.getLogger(SpeakWeatherForecast.class.getName());
+public class SpeakWeatherService {
+    private static final Logger LOGGER = Logger.getLogger(SpeakWeatherService.class.getName());
     @Autowired
     WeatherService weatherService;
     @Autowired
     VoiceRssService voiceRssService;
 
-    public SpeakWeatherForecast(WeatherService weatherService, VoiceRssService voiceRssService) {
+    public SpeakWeatherService(WeatherService weatherService, VoiceRssService voiceRssService) {
         this.weatherService = weatherService;
         this.voiceRssService = voiceRssService;
     }

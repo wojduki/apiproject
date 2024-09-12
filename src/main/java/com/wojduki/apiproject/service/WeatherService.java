@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 @Service
 public class WeatherService {
-    private static final Logger LOGGER = Logger.getLogger(ChuckNorrisService.class.getName());
+    private static final Logger LOGGER = Logger.getLogger(WeatherService.class.getName());
     private static final String API_URL = "https://open-weather13.p.rapidapi.com/city/london/EN";
     private OkHttpClient okHttpClient = new OkHttpClient();
 
